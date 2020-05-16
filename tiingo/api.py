@@ -89,7 +89,7 @@ class TiingoClient(RestClient):
     def __repr__(self):
         return '<TiingoClient(url="{}")>'.format(self._base_url)
 
-    def _is_eod_frequency(self,frequency):
+    def _is_eod_frequency(self, frequency):
         return frequency.lower() in ['daily', 'weekly', 'monthly', 'annually']
 
     # TICKER PRICE ENDPOINTS
